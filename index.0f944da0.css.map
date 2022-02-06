@@ -1,0 +1,1 @@
+{"mappings":"AAAA,SAEA,YAAA,CACA,YAAA,CAFA,UAGA","sources":["src/styles.css"],"sourcesContent":["textarea {\r\n    width: 90vw;\r\n    height: 200px;\r\n    padding: 10px;\r\n}"],"names":[],"version":3,"file":"index.0f944da0.css.map"}

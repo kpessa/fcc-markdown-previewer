@@ -1,0 +1,19 @@
+{
+  "name": "markdown-previewer",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "dependencies": {
+    "parcel": "^2.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-markdown": "^8.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC"
+}

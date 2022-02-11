@@ -1014,47 +1014,96 @@ var _reactMarkdownDefault = parcelHelpers.interopDefault(_reactMarkdown);
 var _s = $RefreshSig$();
 function App() {
     _s();
-    const [text, setText] = _react.useState('');
+    let initialText = `
+# Welcome to my React Markdown Previewer!
+
+## This is a sub-heading...
+### And here's some other cool stuff:
+
+Heres some code, \`<div></div>\`, between 2 backticks.
+
+\`\`\`;
+	// this is multi-line code:
+
+	function anotherExample(firstLine, lastLine) {
+		if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
+			return multiLineCode;
+		}
+	}
+\`\`\`
+
+You can also make text **bold**... whoa!
+Or _italic_.
+Or... wait for it... **_both!_**
+And feel free to go crazy ~~crossing stuff out~~.
+
+There's also [links](https://www.freecodecamp.org), and
+> Block Quotes!
+
+And if you want to get really crazy, even tables:
+
+
+Wild Header | Crazy Header | Another Header?
+------------ | ------------- | -------------
+Your content can | be here, and it | can be here....
+And here. | Okay. | I think we get it.
+
+- And of course there are lists.
+  - Some are bulleted.
+     - With different indentation levels.
+        - That look like this.
+
+
+1. And there are numbered lists too.
+1. Use just 1s if you want!
+1. And last but not least, let's not forget embedded images:
+
+![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
+
+
+`;
+    const [text, setText] = _react.useState(initialText);
     return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
                 children: "Editor"
             }, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 10,
+                lineNumber: 58,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("textarea", {
+                id: "editor",
                 value: text,
                 onChange: (e)=>setText(e.target.value)
             }, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 11,
+                lineNumber: 59,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
                 children: "Preview"
             }, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 12,
+                lineNumber: 60,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactMarkdownDefault.default, {
                 children: text
             }, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 13,
+                lineNumber: 62,
                 columnNumber: 4
             }, this)
         ]
     }, void 0, true));
 }
-_s(App, "M8VhbSOru85VOsk7T2j5DvKRp+M=");
+_s(App, "f5pZBsaDizE+hjSSQ4EgPmstJXQ=");
 _c = App;
 _reactDomDefault.default.render(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(App, {
 }, void 0, false, {
     fileName: "src/app.js",
-    lineNumber: 18,
+    lineNumber: 67,
     columnNumber: 17
 }, undefined), document.body);
 var _c;

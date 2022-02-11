@@ -57,9 +57,10 @@ And here. | Okay. | I think we get it.
 		<>
 			<h1>Editor</h1>
 			<textarea id="editor" value={text} onChange={e => setText(e.target.value)} />
-			<h1>Preview</h1>
-
-			<ReactMarkdown>{text}</ReactMarkdown>
+			<div id="preview">
+				<h1>Preview</h1>
+				<ReactMarkdown>{text}</ReactMarkdown>
+			</div>
 		</>
 	);
 }

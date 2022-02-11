@@ -9,10 +9,13 @@
     "react-dom": "^17.0.2",
     "react-markdown": "^8.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  },
   "scripts": {
     "start": "parcel",
-    "build": "parcel build --public-url https://kpessa.github.io/fcc-markdown-previewer/"
+    "build": "parcel build --public-url https://kpessa.github.io/fcc-markdown-previewer/",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC"
